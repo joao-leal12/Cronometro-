@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+            <!---Personalizado-->
+    <link rel="stylesheet" href="css/estilo.css"/> 
+            <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/6ed0fa6842.js" crossorigin="anonymous"></script>
+    <title>Cronometro</title>
+</head>
+<body class="bg-dark ">
+
+
+    <div class="container h-100 ">
+       
+        <div class="row justify-content-center h-75 align-items-center">
+
+            <div class="col-md-4 ">
+
+                <div class="rounded-circle border border-light estilizar">
+
+                    <span class="text-white" id="minutos">
+                      
+                    </span>
+                    
+                    <span class="text-white" id="segundos">
+                       
+                    </span>
+                    
+                    <span class="text-white" id="Msegundos">
+                        
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div> <!--End-first-row-->
+
+        <div class="row justify-content-center">
+            <div class="col-md-6 d-flex justify-content-center" >
+               <div class="d-flex justify-content-evenly w-100">
+                   
+                   <div>
+                       
+                        <button onclick="iniciar()" class="btn btn-success">
+                            Iniciar
+                        </button>
+                        
+                   </div>
+                   <div >
+                       <button class="btn btn-danger botao rounded-circle" onclick="pause()">
+                            <span class="icone">
+                                
+                                <svg class="iconi"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M272 63.1l-32 0c-26.51 0-48 21.49-48 47.1v288c0 26.51 21.49 48 48 48L272 448c26.51 0 48-21.49 48-48v-288C320 85.49 298.5 63.1 272 63.1zM80 63.1l-32 0c-26.51 0-48 21.49-48 48v288C0 426.5 21.49 448 48 448l32 0c26.51 0 48-21.49 48-48v-288C128 85.49 106.5 63.1 80 63.1z"/></svg>
+                            
+                            </span>
+                        </button>
+                   </div>
+                   <div >
+                       <button class="btn btn-primary "  onclick="zerar()">
+                           
+                            Finalizar
+
+                       </button>
+                   </div>
+               </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,65 @@
+
+
+
+body,html{
+
+    height: 100%; 
+     
+
+}
+
+#minutos, #segundos,  #Msegundos{
+
+    font-size: 60px; 
+
+}
+
+
+.estilizar {
+
+    height: 400px; 
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.estilizar-P{
+
+    height: 400px; 
+
+
+}
+
+
+span{
+
+    display: block; 
+    
+
+
+}
+
+.btn-success{
+
+    color: black; 
+    font-weight: bold;
+
+
+}
+
+.btn-primary{
+
+    color: black; 
+    font-weight: bold; 
+
+
+}
+
+.iconi{
+
+    width: 19px; 
+   
+    
+}
+
