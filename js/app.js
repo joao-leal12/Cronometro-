@@ -80,7 +80,8 @@ function iniciar() {
     }, 5)
 
     
-    
+    document.getElementById('btn').setAttribute('disabled', 'disabled');
+   
    
 }
 
@@ -90,8 +91,8 @@ function pause() {
    
 
     clearInterval(interval)
+    document.getElementById('btn').removeAttribute('disabled', 'disabled');
 
-  
    
 
 
@@ -101,14 +102,15 @@ function pause() {
 
 function zerar() {
 
-    clearInterval(interval)
+    clearInterval(interval);
      y = 0;
      x = 0;
      z = 0; 
 
-     Minutos.innerHTML = `0${y} :`
-     Segundos.innerHTML = `0${x} : `
-     Msegundos.innerHTML = `0${z}`
+     Minutos.innerHTML = `0${y} :`;
+     Segundos.innerHTML = `0${x} : `;
+     Msegundos.innerHTML = `0${z}`;
+     document.getElementById('btn').removeAttribute('disabled', 'disabled');
 
 
 
